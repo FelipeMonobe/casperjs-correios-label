@@ -1,0 +1,19 @@
+{
+    "sender": {
+        "zip": "09180280",
+        "name": "Maria remetente",
+        "company": "Empresa da Maria",
+        "number": "123",
+        "complement": "bloco A, apto 22",
+        "phone": "155383039"
+    },
+    "recipient": {
+        "zip": "34580330",
+        "name": "João destinatario",
+        "company": "Empresa do João",
+        "number": "456",
+        "complement": "casa do fundo",
+        "phone": "135301227",
+        "description": "Declaração do conteúdo"
+    }
+}

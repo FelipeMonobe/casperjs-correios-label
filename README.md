@@ -2,7 +2,7 @@
 
 WIP script.
 
-Installation steps:
+##Installation steps:
 1. Install PhantomJS @ http://phantomjs.org/download.html;
 2. Run `npm i`;
 3. Modify casperjs-correios-label/data-model.json as needed;

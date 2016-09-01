@@ -6,6 +6,5 @@ WIP script.
 1. Install PhantomJS @ http://phantomjs.org/download.html;
 2. Run `npm i`;
 3. Modify casperjs-correios-label/data-model.json as needed;
-4. Stringify casperjs-correios-label/data-model.json;
-5. Run `node_modules/casperjs/bin/casperjs index.js {{stringified data-model}}`;
-6. Get the label image file at root directory;
+4. Run `node index.js`;
+5. Get label as a base64 encoded image;

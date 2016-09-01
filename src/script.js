@@ -5,12 +5,8 @@ var casper = require('casper').create(),
   formCopyRecipient = 'javascript:mesmaEtiqueta(1,\'p\')',
   labelPage = /gerarEtiqueta\.cfm/,
   postData = JSON.parse(casper.cli.args),
-  senderFormCEP = {
-    'input[name="cep_1"]': postData.sender.zip
-  },
-  recipientFormCEP = {
-    'input[name="desCep_1"]': postData.recipient.zip
-  },
+  senderFormCEP = { 'input[name="cep_1"]': postData.sender.zip },
+  recipientFormCEP = { 'input[name="desCep_1"]': postData.recipient.zip },
   formBody = {
     // SENDER DATA
     'input[name="nome_1"]': postData.sender.name,
@@ -69,5 +65,7 @@ function waitForPopupCallback() {
 
 function withPopupCallback() {
   // 6. SEND DATA BACK
-  casper.echo(casper.captureBase64('jpg'));
+  casper.wait(500, function() {
+    casper.echo(casper.captureBase64('jpg'));
+  });
 }
